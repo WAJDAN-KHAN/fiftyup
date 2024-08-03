@@ -243,6 +243,16 @@ p {
 .trustpilot-widget {
     padding-top: 1rem!important;
 }
+
+.tp-widget-wrapper {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 750px;
+    position: relative;
+}
+
+ 
+
 .block-text-wrapper {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -1141,6 +1151,9 @@ footer .disclaimer-section p a:hover{
     .block-accordion-group-wrapper .layout-grid .accordion-group-tab-wrapper .control-div .expand-button {
         font-size: calc(1rem + (20 - 16) * ((100vw - 18.75rem)/ (1200 - 300)));
     }
+    .tp-widget-trustscore {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 750px) {
@@ -1500,6 +1513,11 @@ footer .disclaimer-section p a:hover{
     .block-accordion-wrapper .layout-grid .main-section {
         grid-area: main-area;
     }
+    .main-section{
+        max-width: 990px;
+        width: 100%;
+        margin: auto;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -1555,6 +1573,9 @@ footer .disclaimer-section p a:hover{
     }
     .block-accordion-group-wrapper .layout-grid .accordion-group-tab-wrapper .control-div .expand-container .expand-content .nav-list>li a.btn {
         font-size: 1.25rem;
+    }
+    .container {
+        max-width: 1200px;
     }
 }
 
@@ -1615,11 +1636,17 @@ footer .disclaimer-section p a:hover{
         left: -25%;
         bottom: -5%;
     }
+    .tp-widget-wrapper {
+        height: 100%;
+        margin: 0 auto;
+        max-width: 100%;
+        position: relative;
+    }
 
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .tp-widget-review {
         width: 260px; /* 1 slide for small screens */
     }
