@@ -1658,5 +1658,8 @@ footer .disclaimer-section p a:hover{
         width: 300px;
         margin: auto;
     }
+    .coll{
+        flex-direction: column;
+    }
    
 }
