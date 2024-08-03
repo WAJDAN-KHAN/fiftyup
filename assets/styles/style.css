@@ -1621,18 +1621,15 @@ footer .disclaimer-section p a:hover{
 
 @media (max-width: 480px) {
     .tp-widget-review {
-        width: 250px; /* 1 slide for small screens */
+        width: 260px; /* 1 slide for small screens */
     }
 
    
-    .arrow-right-container {
-        right: 0px;
-        z-index: 999;
+    .trustpilot-carousel{
+        display: flex;
+        justify-content: end;
+        width: 300px;
+        margin: auto;
     }
-    .arrow-left-container {
-        left: 0px;
-        z-index: 999;
-
-    }
-     
+   
 }
