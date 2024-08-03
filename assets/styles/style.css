@@ -803,12 +803,26 @@ footer .back2top {
     width: 4.5rem;
     height: 5.0625rem;
     font-size: .875rem;
-    
     font-weight: 600;
     text-align: center;
     background-color: #211e2e;
     box-shadow: 0 7px 13px #0000002B;
     border: none;
+}
+
+footer .back2top:hover {
+    text-decoration: none;
+    color: #292635;
+    background-color: #f3f3f3;
+}
+
+footer .back2top .arrow-icon {
+    transition: filter 0.3s;
+    filter: brightness(0) invert(1); /* Ensures the image is white by default */
+}
+
+footer .back2top:hover .arrow-icon {
+    filter: brightness(0) invert(41%) sepia(57%) saturate(5041%) hue-rotate(341deg) brightness(97%) contrast(106%);
 }
 
 footer {
@@ -1658,8 +1672,51 @@ footer .disclaimer-section p a:hover{
         width: 300px;
         margin: auto;
     }
-    .coll{
-        flex-direction: column;
+    #tp-widget-reviews-filter-label ,#rating-long{
+        font-size: 12px;
+    }
+    .arrow-right-container {
+        right: -30px;
+    }
+    .arrow-left-container {
+        left: -30px;
     }
    
 }
+@media (max-width: 435px) {
+    .tp-widget-review {
+        width: 260px; /* 1 slide for small screens */
+    }
+
+   
+    .trustpilot-carousel{
+        display: flex;
+        justify-content: end;
+        width: 300px;
+        margin: auto;
+    }
+    .coll{
+        flex-direction: column;
+    }
+    
+    .wrapper-bottom .tp-widget-profile-link{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .hidden{
+        display: none;
+    }
+   
+}
+
+@media(max-width:385px){
+    .arrow-right-container {
+        right: -20px;
+    }
+    .arrow-left-container {
+        left: -20px;
+    }
+   
+}
+
