@@ -88,6 +88,12 @@ body {
     user-select: auto;
     cursor: auto;
 }
+ 
+
+.header-phone-cta-wrapper .phone-number {
+    color: white !important; /* Ensure the color is applied specifically */
+}
+
 .number{
     color: white !important;
 
@@ -1374,6 +1380,9 @@ footer .disclaimer-section p a:hover{
     .number{
         color: #292635 !important;
         
+    }
+    .header-phone-cta-wrapper .phone-number {
+        color: #292635 !important; /* Ensure the color is applied specifically */
     }
     .header-phone-cta-wrapper .phone-text:before {
         content: '';
