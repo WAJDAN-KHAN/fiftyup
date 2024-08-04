@@ -1159,6 +1159,8 @@ footer .disclaimer-section p a:hover{
 
 
 
+
+
 @media screen and (min-width: 300px) {
     .block-accordion-group-wrapper .layout-grid .accordion-group-tab-wrapper .control-div .expand-container .expand-content .nav-list>li a.btn {
         font-size: calc(1rem +(20 - 16)*((100vw - 18.75rem) /(1200 - 300)));
@@ -1533,6 +1535,13 @@ footer .disclaimer-section p a:hover{
         width: 100%;
         margin: auto;
     }
+    .block-cta-wrapper.single-button .cta-wrapper .content-wrapper {
+        padding-left: 12.5rem;
+        flex-wrap: nowrap;
+    }
+    .padd{
+        --pt1: 10.375rem !important;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -1558,6 +1567,7 @@ footer .disclaimer-section p a:hover{
     .block-cta-wrapper.multi-buttons-bg-image .block-cta-title-wrapper {
         width: 66.66666667%;
     }
+  
 }
 
 @media (min-width: 1200px) {
@@ -1624,13 +1634,26 @@ footer .disclaimer-section p a:hover{
         width: calc(247px * 3); /* Adjust width for 3 slides */
     }
 }
+@media (max-width: 1024px) {
+    .block-cta-wrapper .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        max-width: 100%;
+    }
+}
 
-@media (max-width: 768px) {
-   
-
+@media (max-width: 990px) {
+    .padd{
+        --pt1: 17.125rem !important;
+    }
+    /* .arrow-right-container{
+        right: -40px;
+    }
+    .arrow-left-container{
+        left: -40px;
+    } */
     .slides {
-        width: calc(1 * (247px + 20px)); /* 1 card + margin */
-        padding-right: 20px; /* Space after the last slide */
+        width: calc(247px * 2); /* Adjust width for 3 slides */
     }
     .block-hero-wrapper .hero-overlay-cutout:before {
         background-color: #fff;
@@ -1651,11 +1674,34 @@ footer .disclaimer-section p a:hover{
         left: -25%;
         bottom: -5%;
     }
+}
+
+
+@media (max-width: 768px) {
+   
+
+    .slides {
+        width: calc(1 * (247px + 20px)); /* 1 card + margin */
+        padding-right: 20px; /* Space after the last slide */
+    }
+
     .tp-widget-wrapper {
         height: 100%;
         margin: 0 auto;
         max-width: 100%;
         position: relative;
+    }
+    .arrow-right-container {
+        right: -30px;
+    }
+    .arrow-left-container {
+        left: -30px;
+    }
+    .trustpilot-carousel {
+        display: flex;
+        justify-content: center;
+        max-width: 300px;
+        margin: auto;
     }
 
 }
