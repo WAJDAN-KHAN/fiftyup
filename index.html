@@ -1687,6 +1687,20 @@
             this.setAttribute('aria-expanded', !isExpanded);
         });
 
+        document.querySelectorAll('.expand-container .btn').forEach(item => {
+            item.addEventListener('click', function () {
+                const expandContainer = document.querySelector('.expand-container');
+                const expandIcon = document.querySelector('.expand-button .expand-icon img');
+
+                expandContainer.classList.remove('open');
+                expandIcon.classList.remove('rotate');
+
+                // Update aria-expanded attribute
+                document.querySelector('.expand-button').setAttribute('aria-expanded', false);
+            });
+        });
+
+
     </script>
 </body>
 
