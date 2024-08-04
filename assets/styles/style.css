@@ -80,7 +80,7 @@ body {
 .header-phone-cta-wrapper .phone-text {
     display: none;
     align-items: center;
-    color: #fff;
+    color: white !important;
     background-color: #292635;
     padding: 0 .875rem;
     -webkit-user-select: auto;
@@ -1365,7 +1365,7 @@ footer .disclaimer-section p a:hover{
         padding: .66875em 1.4em;
         position: relative;
         filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0));
-        color: #292635;
+        color: #292635 !important;
     }
     .header-phone-cta-wrapper .phone-text:before {
         content: '';
@@ -1627,11 +1627,11 @@ footer .disclaimer-section p a:hover{
 /* Media queries to handle responsiveness */
 @media (max-width: 1200px) {
     .tp-widget-review {
-        width: 247px; /* Keep fixed width for 3 slides */
+        width: 205px; /* Keep fixed width for 3 slides */
     }
 
     .slides {
-        width: calc(247px * 3); /* Adjust width for 3 slides */
+        width: calc(205px * 3); /* Adjust width for 3 slides */
     }
 }
 @media (max-width: 1024px) {
@@ -1646,15 +1646,8 @@ footer .disclaimer-section p a:hover{
     .padd{
         --pt1: 17.125rem !important;
     }
-    /* .arrow-right-container{
-        right: -40px;
-    }
-    .arrow-left-container{
-        left: -40px;
-    } */
-    .slides {
-        width: calc(247px * 2); /* Adjust width for 3 slides */
-    }
+
+  
     .block-hero-wrapper .hero-overlay-cutout:before {
         background-color: #fff;
         -webkit-mask-image: url('../images/fiftyup-icon.svg');
@@ -1681,10 +1674,13 @@ footer .disclaimer-section p a:hover{
    
 
     .slides {
-        width: calc(1 * (247px + 20px)); /* 1 card + margin */
+        width: calc(1 * (260px + 20px)); /* 1 card + margin */
         padding-right: 20px; /* Space after the last slide */
     }
 
+    .tp-widget-review {
+        width: 260px; /* 1 slide for small screens */
+    }
     .tp-widget-wrapper {
         height: 100%;
         margin: 0 auto;
