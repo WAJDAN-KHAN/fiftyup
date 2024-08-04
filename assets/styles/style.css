@@ -1728,7 +1728,7 @@ footer .disclaimer-section p a:hover{
 }
 @media (max-width: 435px) {
     .tp-widget-review {
-        width: 260px; /* 1 slide for small screens */
+        width: 280px; /* 1 slide for small screens */
     }
 
    
