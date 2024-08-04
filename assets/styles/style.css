@@ -808,6 +808,7 @@ footer .back2top {
     background-color: #211e2e;
     box-shadow: 0 7px 13px #0000002B;
     border: none;
+    justify-content: center;
 }
 
 footer .back2top:hover {
