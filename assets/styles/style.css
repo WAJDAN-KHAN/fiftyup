@@ -1755,10 +1755,10 @@ footer .disclaimer-section p a:hover{
 
 @media(max-width:385px){
     .arrow-right-container {
-        right: -20px;
+        right: -28px;
     }
     .arrow-left-container {
-        left: -20px;
+        left: -28px;
     }
    
 }
