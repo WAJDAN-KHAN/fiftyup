@@ -88,6 +88,10 @@ body {
     user-select: auto;
     cursor: auto;
 }
+.number{
+    color: white !important;
+
+}
 
 .btn {
     display: inline-block;
@@ -1366,6 +1370,10 @@ footer .disclaimer-section p a:hover{
         position: relative;
         filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0));
         color: #292635 !important;
+    }
+    .number{
+        color: #292635 !important;
+        
     }
     .header-phone-cta-wrapper .phone-text:before {
         content: '';
